@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+html,
+body {
+  margin: 0;
+  background-color: white;
+  color: #333;
+  font-family: Varela Round;
+  text-rendering: optimizeLegibility;
+  background: url("./01portada.jpg")
+    no-repeat fixed center;
+  background-size: cover;
+}
+.main {
+  padding: 75px 100px;
+  flex-wrap: wrap;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+div,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Varela Round;
+}
+p,
+li,
+ul,
+pre,
+a {
+  font-size: 10px;
+  font-family: Varela Round;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+p {
+  padding: 12px 15px 13px 18px;
+  font-size: 2vw;
+}
+h1 {
+  padding: 15px 20px 15px 20px;
+  font-size: 2.5vw;
+}
+
+footer {
+  font-size: 7vw;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  width: 55%;
+  background-color: white;
+  margin: auto;
+  opacity: 0.7;
+  margin-top: 10px;
+  border-radius: 25px;
+  height: auto;
+}
+footer:hover {
+  cursor: pointer;
+}
+
+button {
+  padding: 15px 15px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(80, 75, 75);
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 15px #333;
+}
+
+button:hover {
+  opacity: 0.3;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 5px #333;
+  transform: translateY(4px);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  max-width: 600px;
+  padding: 25px;
+}
+
+@media screen and (max-width: 620px) {
+  h1 {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+  p {
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+  }
+  button {
+    padding: 10px 15px;
+  }
+  .main {
+    padding: 50px 50px;
+  }
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4vw;
+  padding-top: 4vh;
+  background-color: transparent;
+}
+
+.header a {
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.logo {
+  background-color: white;
+  padding: 1vw;
+  border-radius: 10px;
+  opacity: 0.7;
+  margin: auto;
+  width: 40%;
+}
+/*  HOME  */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10vw;
+  background-color: transparent;
+}
+
+.home-text {
+  height: auto;
+  width: 65%;
+  text-align: left;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  opacity: 0.7;
+  margin: auto;
+}
+
+.home-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 620px) {
+  .home-text {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+}
+
+/*  ABOUT  */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 7vh;
+  background-color: transparent;
+}
+
+.about-text {
+  height: auto;
+  width: 65%;
+  text-align: left;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  opacity: 0.7;
+  margin: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .about-text {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
+/*  LENGUAGE  */
+
+.lenguage {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10vh;
+  background-color: transparent;
+}
+
+.lenguage-text {
+  height: auto;
+  width: 65%;
+  text-align: left;
+  background-color: white;
+  padding: 50px;
+  border-radius: 25px;
+  opacity: 0.7;
+  margin: auto;
+}
+
+@media screen and (max-width: 620px) {
+  .lenguage-text {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
+/*  PROJECTS  */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 200px;
+  background-color: transparent;
+}
+.card {
+  height: 300px;
+  width: 30%;
+  text-align: left;
+  background-color: white;
+  padding: 50px;
+  margin: auto;
+  border-radius: 25px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+  }
+}
